@@ -1,0 +1,28 @@
+.transactionHistory {
+  width: 600px;
+  margin: 40px auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+.tableHead {
+  background-color: #00bcd4;
+  color: white;
+  text-transform: uppercase;
+}
+.tableHeader {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+.rowEven {
+  background-color: #f3f3f3;
+}
+.rowOdd {
+  background-color: #ffffff;
+}
+.cell {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
