@@ -1,31 +1,15 @@
-import s from './Profile.module.css';
+import css from '../FriendList/FriendList.module.css'
 
-const Profile = ({ name, tag, location, image, stats }) => (
-    <div className={s.container}>
-        <div className={s.description}>
-            <img className={s.avatar}
-                src={image}
-                alt="User avatar" />
-            <p className={s.name}>{name}</p>
-            <p className={s.tag}>@{tag}</p>
-            <p className={s.location}>{location}</p>
-        </div>
+const FriendListItem = ({ avatar, name, isOnline, id }) => {
+  return (
+    <li className={css.friendItem} key={id}>
+      <img src={avatar} alt="Avatar" width="84" />
+      <p className={css.friendName}>{name}</p>
+      <p className={`${isOnline ? css.online : css.offline}`}>
+        {isOnline ? 'Online' : 'Offline'}
+      </p>
+    </li>
+  );
+};
 
-        <ul className={s.stats}>
-            <li className={s.item}>
-                <span className={s.label}>Followers</span>
-                <span className={s.quantity}>{stats.followers}</span>
-            </li>
-            <li className={s.item}>
-                <span className={s.label}>Views</span>
-                <span className={s.quantity}>{stats.views}</span>
-            </li>
-            <li className={s.item}>
-                <span className={s.label}>Likes</span>
-                <span className={s.quantity}>{stats.likes}</span>
-            </li>
-        </ul>
-    </div>
-)
-
-export default Profile;
+export default FriendListItem;

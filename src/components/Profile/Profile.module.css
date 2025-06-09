@@ -1,61 +1,83 @@
-.container {
-  max-width: 300px;
-  margin: 0 auto;
-  background-color: #f5f5f5;
-  border: 1px solid #e4e4e4;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: Arial, sans-serif;
-}
-.description {
-  text-align: center;
-  padding: 30px 20px 20px;
-}
-.avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
-.name {
-  font-size: 20px;
-  font-weight: bold;
-  color: #122236;
-  margin-bottom: 10px;
-}
-.tag,
-.location {
-  font-size: 20px;
-  color: #768696;
-  margin: 0;
-}
-.stats {
-  display: flex;
-  background-color: #f3f6f9;
-  border-top: 1px solid #e4e9f0;
+* {
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
-.item {
-  flex: 1;
-  padding: 15px 0;
-  text-align: center;
-  border-right: 1px solid #e4e9f0;
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 10px;
+  width: 300px;
+  padding-top: 15px;
+  margin: auto;
+  margin-top: 30px;
+  overflow: hidden;
 }
-.item:last-child {
-  border-right: none;
+
+.profileTopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.label {
-  display: block;
-  font-size: 12px;
-  color: #768696;
+
+.profileImgContainer {
+  background-color: gray;
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  margin-bottom: 20px;
 }
-.quantity {
-  display: block;
-  margin-top: 5px;
+
+.profileImg {
+  width: 100%;
+  height: 100%;
+}
+
+.profileInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.info {
+  color: gray;
+  font-size: 25px;
+}
+
+.name {
+  color: black;
+  font-size: 35px;
   font-weight: bold;
-  color: #1f3349;
+}
+
+.ptaglctn {
+  text-align: center;
+  color: rgb(100, 100, 100);
+}
+
+.profileFooterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.profileLi {
+  border: 1px solid gray;
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  background-color: lightgray;
+  padding: 15px;
+}
+
+.stat {
+  font-weight: bold;
 }
